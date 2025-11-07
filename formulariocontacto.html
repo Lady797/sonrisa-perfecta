@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Sonrisa Perfecta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="aviso">
+    ⚠️ Esta página web es un trabajo de fin de curso — No es un sitio oficial.
+  </div>
+    <section class="slider">
+        <div class="slide active">
+            <img src="images/slider1.jpg" alt="mujer sonriendo">
+        </div>
+        <div class="slide">
+            <img src="images/slider2.jpg" alt="sonrisa infantil">
+        </div>
+        <div class="slide">
+            <img src="images/slider3.jpg" alt="imagen radiografia dental">
+        </div>
+        
+    </section>
+
+     <header>
+        <div class="logo">
+            <h1>Clínica Dental Sonrisa Perfecta</h1>
+        </div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contacto" style="background-color:#f5f9ff; padding:60px 10%; text-align:center;">
+        <h2>Contáctanos</h2>
+        <p class="intro-equipo">Si tienes alguna duda o quieres agendar una cita, completa el siguiente formulario y nos pondremos en contacto contigo.</p>
+
+      <form id="form-contacto" class="form-contacto" style="max-width:600px; margin:0 auto; text-align:left;">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <span class="error" id="error-nombre"></span>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+    <span class="error" id="error-email"></span>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    <span class="error" id="error-mensaje"></span>
+
+    <button type="submit" class="btn">Enviar</button>
+</form>
+    </section>
+
+     <footer>
+        <nav class="menu-footer">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-secundario">
+            <ul>
+                <li><a href="privacidad.html">Política de Privacidad</a></li>
+                <li><a href="cookiesyavisolegal.html">Aviso Legal</a></li>
+            </ul>
+        </div>
+
+        <p class="copy">© 2025 Clínica Dental Sonrisa Perfecta. Todos los derechos reservados.</p>
+    </footer>
+<script src="java.js"></script>
+
+</body>
+</html>

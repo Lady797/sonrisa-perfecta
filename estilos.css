@@ -1,0 +1,398 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+/*barra aviso*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.aviso {
+  position: fixed;       
+  top: 0;                
+  left: 0;
+  width: 100%;
+  background-color: #f5d969; 
+  color: #222;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 1000;         
+}
+
+.contenido {
+  padding-top: 60px; 
+}
+/*general*/
+h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #004c99;
+  margin: 0 0 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0099ff;
+}
+
+/*slider*/
+.slider {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*header*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6f0ff;
+  padding: 15px 0;
+  border-bottom: 2px solid #b3d1ff;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-principal a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.menu-principal a:hover,
+.menu-principal a.activo {
+  border-bottom: 2px solid #0099ff;
+}
+
+/*sombra y botiones*/
+.sombra-suave {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0099ff;
+}
+
+/*blog y servicios*/
+.blog-card,
+.miembro {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover,
+.miembro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.blog-card img,
+.servicio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/*presentacion*/
+.presentacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 10%;
+  background-color: #f5f9ff;
+}
+
+.presentacion .texto {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.presentacion .texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #003366;
+}
+
+.presentacion .imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.presentacion .imagen img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/*quienes somos*/
+.equipo {
+  background-color: #f5f9ff;
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.equipo h2 {
+  font-size: 2rem;
+  color: #004c99;
+  margin-bottom: 15px;
+}
+
+.intro-equipo {
+  color: #003366;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.miembro img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.miembro h3 {
+  color: #004c99;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.miembro p {
+  color: #003366;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/*formulario*/
+.form-contacto label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #003366;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #b3d1ff;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+.form-contacto .btn {
+  padding: 12px 25px;
+}
+
+/*pagina error*/
+.error-404 {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f5f9ff;
+  color: #003366;
+}
+
+.error-404 h1 {
+  font-size: 8rem;
+  margin: 0;
+  color: #004c99;
+}
+
+.error-404 h2 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.error-404 p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.error-404 .btn {
+  padding: 12px 30px;
+}
+
+/*footer*/
+footer {
+  background-color: #004c99;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.menu-footer ul,
+.footer-secundario ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-secundario ul {
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.menu-footer a {
+  color: #cce6ff;
+  font-weight: 600;
+}
+
+.menu-footer a:hover,
+.menu-footer a.activo {
+  color: white;
+}
+
+.footer-secundario a {
+  color: #99ccff;
+  font-size: 0.9rem;
+}
+
+.copy {
+  font-size: 0.8rem;
+  color: #b3d1ff;
+}
+
+.miembro img,
+.blog-card img,
+.servicio-card img,
+.imagenes-ortodoncia img,
+.imagenes-ortodoncia video {
+  width: 300px;       
+  height: 200px;      
+  object-fit: cover;  
+  display: block;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.imagenes-ortodoncia video {
+  box-shadow: -6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .miembro img,
+  .blog-card img,
+  .servicio-card img,
+  .imagenes-ortodoncia img,
+  .imagenes-ortodoncia video {
+    width: 90%;      
+    height: auto;    
+  }
+}
+
+/*responsividad*/
+@media (max-width: 768px) {
+  .presentacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presentacion .texto {
+    padding-right: 0;
+  }
+
+  .menu-principal ul,
+  .menu-footer ul,
+  .footer-secundario ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .equipo-grid {
+    grid-template-columns: 1fr;
+  }
+}
